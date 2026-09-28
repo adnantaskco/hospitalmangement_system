@@ -36,7 +36,7 @@ export default async function EditDoctorPage({ params }: Props) {
   }
 
   return (
-    <main className="min-h-screen bg-slate-100 px-4 py-10">
+    <main className="min-h-screen bg-slate-100 px-4 py-8">
       <div className="mx-auto max-w-2xl">
 
         <Link
