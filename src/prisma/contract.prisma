@@ -1,0 +1,28 @@
+model Patient {
+  id          Int     @id @default(autoincrement())
+  patientId   String  @unique
+  name        String
+  phone       String
+  email       String?
+  dateOfBirth String?
+  gender      String
+  bloodGroup  String?
+  address     String?
+}
+
+model Doctor {
+  id              Int      @id @default(autoincrement())
+  name            String
+  phone           String
+  specialization  String
+  qualification   String
+  attendanceTime  String
+  image           String?
+}
+model Admin {
+  id        Int      
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}
